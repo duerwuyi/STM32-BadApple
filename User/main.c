@@ -86,7 +86,7 @@ int main(void)
 	SDRAM_Init();
 	LED_GPIO_Config();	
 	LCD_Init();
-	//SysTick_Init();
+	SysTick_Init();
 	
 	/* 初始化调试串口，一般为串口1 */
 	Debug_USART_Config();	
@@ -122,7 +122,7 @@ int main(void)
 			//Bad_Apple2(ReadBuffer);
 			//DIS_Line();
 			//LED2_TOGGLE;
-			//Delay_ms(40);
+			Delay_ms(1);
 		}
     //printf("！！文件读取结束：(%d)\n",res_flash);	
 	}
